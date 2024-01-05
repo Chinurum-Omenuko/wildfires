@@ -32,3 +32,4 @@
 /Users/chinurum/Desktop/repos/InFeu/IFbackend/obj/Debug/net7.0/IFbackend.pdb
 /Users/chinurum/Desktop/repos/InFeu/IFbackend/obj/Debug/net7.0/IFbackend.genruntimeconfig.cache
 /Users/chinurum/Desktop/repos/InFeu/IFbackend/obj/Debug/net7.0/ref/IFbackend.dll
+/Users/chinurum/Desktop/repos/InFeu/IFbackend/bin/Debug/net7.0/Newtonsoft.Json.dll
