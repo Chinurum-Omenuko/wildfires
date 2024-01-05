@@ -8,6 +8,6 @@ namespace IFbackend.Services.News
 {
     public interface INAPIService
     {
-        Task<IEnumerable<TheNews>> GetNewsAsync();
+        Task<IEnumerable<Models.News>> GetNewsAsync();
     }
 }
