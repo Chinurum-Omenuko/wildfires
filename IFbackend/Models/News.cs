@@ -7,7 +7,7 @@ using Newtonsoft.Json.Converters;
 
 namespace IFbackend.Models
 {
-    public partial class News
+    public class News
     {
         [JsonProperty("source")]
         public Source Source { get; set; }
