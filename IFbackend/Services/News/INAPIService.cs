@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using IFbackend.Models;
+using TheNews = IFbackend.Models.News;
 
 namespace IFbackend.Services.News
 {
     public interface INAPIService
     {
-        Task<IEnumerable<News>> GetNewsAsync();
+        Task<IEnumerable<TheNews>> GetNewsAsync();
     }
 }
