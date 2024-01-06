@@ -4,9 +4,11 @@
 
 <section>
 
-    <h2>Submisiions</h2>
+    <p>Submisiions</p>
 </section>
 
 <style>
-    
+    p{
+        color: white;
+    }
 </style>
