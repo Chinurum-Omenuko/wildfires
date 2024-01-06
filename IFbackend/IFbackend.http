@@ -1,6 +1,0 @@
-@IFbackend_HostAddress = http://localhost:5139
-
-GET {{IFbackend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
