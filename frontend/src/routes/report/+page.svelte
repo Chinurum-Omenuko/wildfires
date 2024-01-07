@@ -12,5 +12,6 @@
     display: grid;
     place-items: center;
     height: 100vh;
+    padding-top: 4rem;
    }
 </style>
