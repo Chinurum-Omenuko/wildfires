@@ -89,8 +89,16 @@ WSGI_APPLICATION = 'infeubackend.wsgi.application'
 DATABASE_URL = os.getenv('postgres://infeu_reports_user:ieYdKL4ofJREMNbrZtzhnC3doVEfGscj@dpg-cmdpv9md3nmc73dluq70-a:5432/infeu_reports')
 
 DATABASES = {
-   'default': dj_database_url.config('DATABASE_URL')
+ 'default': {
+     'ENGINE': 'django.db.backends.postgresql',
+     'NAME': 'infeu_reports',
+     'USER': 'infeu_reports_user',
+     'PASSWORD': 'ieYdKL4ofJREMNbrZtzhnC3doVEfGscj',
+     'HOST': 'dpg-cmdpv9md3nmc73dluq70-a',
+     'PORT': '5432',
+ }
 }
+
 
 
 
