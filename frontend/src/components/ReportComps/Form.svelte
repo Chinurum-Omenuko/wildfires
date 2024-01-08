@@ -6,7 +6,7 @@
     let report: string;
 
     const submit = async () => {
-        const url = 'http://127.0.0.1:8000/report/';
+        const url = 'https://infeu.onrender.com/report/';
         const headers = { 'Content-Type': 'application/json' };
         const body = JSON.stringify({name, report});
         
