@@ -4,13 +4,13 @@
 
     import type { LatLngExpression } from "leaflet";
 
-    const initialView: LatLngExpression = [51.514244, 7.468429];
+    const initialView: LatLngExpression = [40.762455202564354, -65.0496827046608];
     export let data;
 </script>
 
 <main>
     <h1>Map</h1>
-    <Map view={initialView} zoom={13}>
+    <Map view={initialView} zoom={2}>
         {#each data.fires as fire}
             <Marker width={20} height={20} lat={fire.coordinates[0]} long={fire.coordinates[1]}/>
         {/each}
