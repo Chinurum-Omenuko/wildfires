@@ -86,9 +86,10 @@ WSGI_APPLICATION = 'infeubackend.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
+DATABASE_URL = os.getenv('postgres://infeu_reports_user:ieYdKL4ofJREMNbrZtzhnC3doVEfGscj@dpg-cmdpv9md3nmc73dluq70-a:5432/infeu_reports')
 
 DATABASES = {
-   'default': dj_database_url.parse(os.getenv('postgres://infeu_reports_user:ieYdKL4ofJREMNbrZtzhnC3doVEfGscj@dpg-cmdpv9md3nmc73dluq70-a:5432/infeu_reports'))
+   'default': dj_database_url.parse(os.getenv(DATABASE_URL))
 }
 
 
