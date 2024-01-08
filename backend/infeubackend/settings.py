@@ -61,7 +61,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
    "http://localhost:5174",
    "https://infeu-diyzczam4-chinurum-omenuko.vercel.app",
-   "https://infeu.vercel.app/"
+   "https://infeu.vercel.app"
    
    
 ]
