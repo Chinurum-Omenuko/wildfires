@@ -1,17 +1,25 @@
 <script lang="ts">
-    export let number: number;
     export let title: string;
-    export let content: string;
+    export let content: string; 
     export let img: string;
-    export let outlet: string;
+    export let url: string;
+    
+    function navigateToArticle(url: string) {
+        window.open(url, "_blank");
+    }
 </script>
-<div class="frame">
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div class="frame" >
     <div class="canvas">
         <div class="image-container">
             <img src={img} alt="">
         </div>
         <div class="title"><h3>{title}</h3></div>
-        <div class="text">{content}</div>
+        <div class="text">
+            {content}
+            <a href={url} target="_blank">read</a>
+        </div>
     </div>
 </div>
 
@@ -45,6 +53,11 @@
             left: 50%;
             transform: translate(-50%, -50%);
             transition: .3s ease-in-out;
+
+            a{
+                text-decoration: dashed;
+                color: red;
+            }
         }
 
         .title{

@@ -20,7 +20,6 @@
 <style lang="scss">
     main{
         min-height: 100vh;
-        border: solid 2px red;
     }
     
 </style>

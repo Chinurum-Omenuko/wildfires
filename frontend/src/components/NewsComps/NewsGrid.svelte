@@ -4,7 +4,6 @@
 
 <section class="newsgallery">
     <slot></slot>
-    
 </section>
 
 
@@ -16,6 +15,17 @@
         grid-auto-rows: 300px 300px;
         gap: 30px;
         margin: 0 20px;
+    }
+
+    @media screen and (max-width: 900px){
+        section{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (max-width: 600px){
+        section{
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     
 
