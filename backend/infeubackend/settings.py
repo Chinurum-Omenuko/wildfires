@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'infeubackend.wsgi.application'
 
 
 DATABASES = {
-   'default': dj_database_url.parse(os.getenv('postgres://infeu_reports_user:ieYdKL4ofJREMNbrZtzhnC3doVEfGscj@dpg-cmdpv9md3nmc73dluq70-a/infeu_reports'))
+   'default': dj_database_url.parse(os.getenv('postgres://infeu_reports_user:ieYdKL4ofJREMNbrZtzhnC3doVEfGscj@dpg-cmdpv9md3nmc73dluq70-a:5432/infeu_reports'))
 }
 
 
