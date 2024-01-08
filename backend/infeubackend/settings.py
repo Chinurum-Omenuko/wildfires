@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+# import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -84,16 +85,12 @@ WSGI_APPLICATION = 'infeubackend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+
 DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'infeu_reports',
-       'USER': 'postgres',
-       'PASSWORD': '321SAMuel321',
-       'HOST': 'localhost',
-       'PORT': '5432'
-    }
+   'default': dj_database_url.parse(os.getenv('DATABASE_URL'))
 }
+
 
 
 # Password validation

@@ -3,7 +3,7 @@
 set -o errexit
 
 # navigate to the backend directory
-cd backend
+cd ./backend
 
 # install dependencies
 pip install -r requirements.txt
