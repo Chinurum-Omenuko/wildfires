@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'infeubackend.wsgi.application'
 DATABASE_URL = os.getenv('postgres://infeu_reports_user:ieYdKL4ofJREMNbrZtzhnC3doVEfGscj@dpg-cmdpv9md3nmc73dluq70-a:5432/infeu_reports')
 
 DATABASES = {
-   'default': dj_database_url.config()
+   'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 
