@@ -1,10 +1,14 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+    import Wheel from "../icons/loading/wheel.svg"
+    let loading = true;
+
 	import Marker from "../components/MapComps/Marker.svelte";
     import Map from "../components/MapComps/Map.svelte";
 
     import type { LatLngExpression } from "leaflet";
-
     const initialView: LatLngExpression = [40.762455202564354, -65.0496827046608];
+
     export let data;
 </script>
 
