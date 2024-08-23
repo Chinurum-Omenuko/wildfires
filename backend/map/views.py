@@ -6,7 +6,7 @@ from json.decoder import JSONDecodeError
 
 async def get_event(request):
  url = "https://eonet.gsfc.nasa.gov/api/v3/events?category=wildfires"
- async with httpx.AsyncClient() as client:
+ async with httpx.AsyncClient(timeout=80) as client:
   data = cache.get(url)
   if data is None:
       
