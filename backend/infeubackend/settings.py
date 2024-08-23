@@ -91,15 +91,15 @@ WSGI_APPLICATION = 'infeubackend.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-DATABASE_URL = os.getenv('postgres://infeu_reports_user:ieYdKL4ofJREMNbrZtzhnC3doVEfGscj@dpg-cmdpv9md3nmc73dluq70-a:5432/infeu_reports')
+DATABASE_URL = os.getenv('postgresql://infeupsql_user:Ip5CV5jWujNmK1WYF2Idtw1ugmTOmqnm@dpg-cr42o9g8fa8c73df9t60-a/infeupsql')
 
 DATABASES = {
  'default': {
      'ENGINE': 'django.db.backends.postgresql',
-     'NAME': 'infeu_reports',
-     'USER': 'infeu_reports_user',
-     'PASSWORD': 'ieYdKL4ofJREMNbrZtzhnC3doVEfGscj',
-     'HOST': 'dpg-cmdpv9md3nmc73dluq70-a',
+     'NAME': 'infeudb',
+     'USER': 'infeupsql_user',
+     'PASSWORD': 'Ip5CV5jWujNmK1WYF2Idtw1ugmTOmqnm',
+     'HOST': 'dpg-cr42o9g8fa8c73df9t60-a',
      'PORT': '5432',
  }
 }
@@ -152,7 +152,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': os.environ.get('redis://red-cmj2l96g1b2c73d71sug:6379'), # Change this according to your Redis server's URL & port
+        'LOCATION': os.environ.get('REDIS_URL'), # Change this according to your Redis server's URL & port
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
