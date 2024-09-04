@@ -1,5 +1,5 @@
 # InFeu
-**Link to App**: [Infeu](https://docs.github.com/articles/basic-writing-and-formatting-syntax](https://infeu.vercel.app/))
+**Link to App**: [Infeu]https://infeu.vercel.app/
 ## What is InFeu?
 - A web application that uses NASA'S EONET API and NewsAPI to display live and recent wildfires accross the world and wildfire related news
 
